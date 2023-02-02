@@ -452,4 +452,14 @@ label.logo {
         width: 350px;
         height: 200px;
     }
+
+    /*responsive about html page*/
+    #information {
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 30px;
+    }
 }
