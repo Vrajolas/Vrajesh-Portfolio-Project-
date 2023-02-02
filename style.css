@@ -1,0 +1,455 @@
+/*default setup of html pages*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Transition of all html pages*/
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*body for all html pages*/
+#mian_page {
+    min-height: 100vh;
+    height: 800px;
+    background-image: url("https://media.istockphoto.com/id/1219473617/vector/young-male-character-writing-code-on-a-desktop-computer-working-from-home-millennials-at-work.jpg?s=612x612&w=0&k=20&c=9KrYfX8M5lFqpUN2y5Pklac_XebWqnI0bmDkMB6NLhU=");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    animation: transitionIn 0.75s;
+}
+
+#about_page {
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url("https://media.istockphoto.com/photos/abstract-blur-exposure-of-white-silver-color-background-with-bokeh-picture-id1060912842?b=1&k=20&m=1060912842&s=612x612&w=0&h=1gGNNLsPB3Yey2zH8mJLWMwABOdtOiBjgyXwNuXbF30=");
+    animation: transitionIn 0.75s;
+}
+
+#skills_page {
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url("https://media.istockphoto.com/photos/abstract-blur-exposure-of-white-silver-color-background-with-bokeh-picture-id1060912842?b=1&k=20&m=1060912842&s=612x612&w=0&h=1gGNNLsPB3Yey2zH8mJLWMwABOdtOiBjgyXwNuXbF30=");
+    animation: transitionIn 0.75s;
+}
+
+#contact_page {
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url("https://media.istockphoto.com/photos/abstract-blur-exposure-of-white-silver-color-background-with-bokeh-picture-id1060912842?b=1&k=20&m=1060912842&s=612x612&w=0&h=1gGNNLsPB3Yey2zH8mJLWMwABOdtOiBjgyXwNuXbF30=");
+    animation: transitionIn 0.75s;
+}
+
+/*Main page of html index page*/
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+.topline {
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #3d535f;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.topline::after {
+    position: absolute;
+    content: " ";
+    height: 4px;
+    width: 50px;
+    bottom: 10px;
+    background-color: #7f00ff;
+}
+
+.myName {
+    color: #7f00ff;
+    text-transform: capitalize;
+}
+
+#main {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*h1 - h6 design*/
+h1 {
+    display: block;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #3d535f;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h5 {
+    font-size: larger;
+    color: black
+}
+
+/*Main page bottons*/
+#download {
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+    margin: auto;
+}
+
+.cv {
+    border: 2px solid rgb(23, 0, 172);
+    padding: 16px 20px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.hire {
+    border: 2px solid rgb(23, 0, 172);
+    padding: 16px 20px;
+    border-radius: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+/*headers and footer of all pages*/
+header {
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("https://www.shutterstock.com/image-vector/technology-banner-design-white-grey-260nw-1544473934.jpg");
+}
+
+footer {
+    position: sticky;
+    top: 100%;
+    bottom: 0;
+    background: rgb(50, 50, 50);
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.footer_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials li a {
+    color: white;
+}
+
+/*Desktop NavBar*/
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 90px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: Black;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 20px 20px;
+    border-radius: 3px;
+}
+
+a.active,a:hover {
+    background: rgb(180, 178, 178);
+    transition: .5s;
+}
+
+label.logo {
+    color: black;
+    font-size: 45px;
+    line-height: 90px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color:black;
+    float: right;
+    line-height: 90px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+#contact_details {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 30px;
+    color: grey;
+}
+
+/*Contents of html About page*/
+#information {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.born {
+    background-image: url("https://www.decoratingcentreonline.co.uk/media/catalog/product/cache/5bec24a7eda87e3d72cddeb7a3d92880/1/0/10237-31_repeat_imitations2.jpg");
+    border: 2px solid black;
+    border-radius: 5%;
+    width: 400px;
+    margin: 10px 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.education {
+    background-image: url("https://www.decoratingcentreonline.co.uk/media/catalog/product/cache/5bec24a7eda87e3d72cddeb7a3d92880/1/0/10237-31_repeat_imitations2.jpg");
+    border: 2px solid black;
+    border-radius: 5%;
+    width: 400px;
+    margin: 10px 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.interests {
+    background-image: url("https://www.decoratingcentreonline.co.uk/media/catalog/product/cache/5bec24a7eda87e3d72cddeb7a3d92880/1/0/10237-31_repeat_imitations2.jpg");
+    border: 2px solid black;
+    border-radius: 5%;
+    width: 400px;
+    margin: 10px 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*contents of html skills page*/
+#skills {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.python {
+    background-image: url("https://www.decoratingcentreonline.co.uk/media/catalog/product/cache/5bec24a7eda87e3d72cddeb7a3d92880/1/0/10237-31_repeat_imitations2.jpg");
+    border: 2px solid black;
+    border-radius: 5%;
+    width: 400px;
+    margin: 10px 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.js {
+    background-image: url("https://www.decoratingcentreonline.co.uk/media/catalog/product/cache/5bec24a7eda87e3d72cddeb7a3d92880/1/0/10237-31_repeat_imitations2.jpg");
+    border: 2px solid black;
+    border-radius: 5%;
+    width: 400px;
+    margin: 10px 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.c-sharp {
+    background-image: url("https://www.decoratingcentreonline.co.uk/media/catalog/product/cache/5bec24a7eda87e3d72cddeb7a3d92880/1/0/10237-31_repeat_imitations2.jpg");
+    border: 2px solid black;
+    border-radius: 5%;
+    width: 400px;
+    margin: 10px 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#project {
+    text-align: center;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.game {
+    border: 2px solid black;
+}
+
+/*Mobile Screen design*/
+@media screen and (max-width: 500px) {
+    /*Responsive logo*/
+    label.logo {
+        font-size: 40px;
+    }
+
+    /*Responsive index html page*/
+    .wrapper {
+        display: flex;
+        width: 100%;
+        height: 20%;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10%;
+        overflow: hidden;
+    }
+    
+    .topline {
+        display: block;
+        position: relative;
+        font-size: 35px;
+        letter-spacing: 5px;
+        color: #3d535f;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .topline::after {
+        position: absolute;
+        content: " ";
+        height: 4px;
+        width: 50px;
+        bottom: 10px;
+        background-color: #7f00ff;
+    }
+
+    /*h1 - h6 tags*/
+    h1 {
+        display: block;
+        font-size: 50px;
+        font-weight: 700;
+        color: #3d535f;
+    }
+    
+
+    /*Responsive NavBar*/
+    nav ul li {
+        display: block;
+    }
+
+    nav ul li a {
+        color: white;
+        font-size: 20px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+    
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 200vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    a:hover, a.active{
+        background-color: rgb(200, 200, 200);
+        color: #0082e6;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    #download {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #contact_details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #phone_icon {
+        margin-bottom: 30px;
+    }
+
+
+    /*responsive footer*/
+    footer {
+        position: sticky;
+        top: 100%;
+        bottom: 0;
+        background: rgb(50, 50, 50);
+        height: 150px;
+        width: 100vw;
+        font-family: "Open Sans";
+        padding-top: 10px;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+    }
+
+    /*responsive skills content*/
+    #skills {
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 30px;
+    }
+
+    .game {
+        width: 350px;
+        height: 200px;
+    }
+}
