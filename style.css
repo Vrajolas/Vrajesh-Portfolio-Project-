@@ -330,7 +330,7 @@ label.logo {
 }
 
 /*Mobile Screen design*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     /*Responsive logo*/
     label.logo {
         font-size: 40px;
